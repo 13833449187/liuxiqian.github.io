@@ -107,20 +107,20 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url(undefined);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >directive</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaScript数据类型和Json格式</h2></a>
             </div>
             <!-- Post -->
             <div class="post-content" >
-                <p><a name="myAnchor"></a></p>
-<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><p>AngularJS 通过被称为 指令 的新属性来扩展 HTML<br><img src="/images/directive1.png" alt=""></p>
-<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ul>
-<li><a href="#sectionOne">通过内置的指令来为应用添加功能</a></li>
-<li><a href="#sectionTwo">自定义指令</a></li>
-</ul>
-<p><a name="sectionOne"></a></p>
-<h2 id="内置的指令"><a href="#内置的指令" class="headerlink" title="内置的指令"></a>内置的指令</h2><p>例如：<br><img src="/images/directive2.png" alt=""></p>
-<p><a name="sectionTwo"></a></p>
-<h2 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h2><p>例如：<br><img src="/images/directive3.png" alt=""><br>link函数参数：<br><img src="/images/directive4.png" alt=""></p>
+                <h2 id="JavaScript-数据类型"><a href="#JavaScript-数据类型" class="headerlink" title="JavaScript 数据类型"></a>JavaScript 数据类型</h2><p>在 JavaScript 中有 5 种不同的数据类型：<br>string<br>number<br>boolean<br>object<br>function<br>3 种对象类型：<br>Object<br>Date<br>Array<br>2 个不包含任何值的数据类型：<br>null<br>undefined<br>参照：<a href="http://www.runoob.com/js/js-type-conversion.html" target="_blank" rel="external">http://www.runoob.com/js/js-type-conversion.html</a></p>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象（object）是JavaScript的核心概念，也是最重要的数据类型。JavaScript的所有数据都可以被视为对象。<br>简单说，所谓对象，就是一种无序的数据集合，由若干个“键值对”（key-value）构成。<br>如下图所示，大括号就定义了一个对象，它被赋值给变量o。这个对象内部包含一个键值对（又称为“成员”），p是“键名”（成员的名称），字符串Hello World是“键值”（成员的值）。键名与键值之间用冒号分隔。如果对象内部包含多个键值对，每个键值对之间用逗号分隔。<br><img src="/images/对象1.png" alt=""><br><img src="/images/对象2.png" alt=""><br>键名<br>对象的所有键名都是字符串，所以加不加引号都可以。上面的代码也可以写成下面这样。<br><img src="/images/对象3.png" alt=""><br>如果键名是数值，会被自动转为字符串。<br><img src="/images/对象4.png" alt=""><br>但是，如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），也不是数字，则必须加上引号，否则会报错。<br><img src="/images/对象5.png" alt=""><br>注意，JavaScript的保留字可以不加引号当作键名。<br><img src="/images/对象6.png" alt=""><br>属性<br>对象的每一个“键名”又称为“属性”（property），它的“键值”可以是任何数据类型。如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用。如下图所示，对象就有一个方法p，它就是一个函数。<br><img src="/images/对象7.png" alt=""><br>参照：<a href="http://javascript.ruanyifeng.com/grammar/object.html" target="_blank" rel="external">http://javascript.ruanyifeng.com/grammar/object.html</a><br>未完待续…</p>
+<p>数组和对象的区别：<br><img src="/images/数组和对象.png" alt=""><br>关联数组：<br><img src="/images/关联数组.png" alt=""><br>JavaScript中，关联数组和对象是一样的。php中，关联数组也是数组：<br><img src="/images/关联数组在js和php的区别.png" alt=""><br>参照：<a href="http://www.ruanyifeng.com/blog/2009/05/data_types_and_json.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2009/05/data_types_and_json.html</a></p>
+<h2 id="Json格式"><a href="#Json格式" class="headerlink" title="Json格式"></a>Json格式</h2><p>JSON对值的类型和格式有严格的规定：</p>
+<p>1.复合类型的值只能是数组或对象，不能是函数、正则表达式对象、日期对象。</p>
+<p>2.简单类型的值只有四种：字符串、数值（必须以十进制表示）、布尔值和null（不能使用NaN, Infinity, -Infinity和undefined）。</p>
+<p>3.字符串必须使用双引号表示，不能使用单引号。</p>
+<p>4.对象的键名必须放在双引号里面。</p>
+<p>5.数组或对象最后一个成员的后面，不能加逗号。<br>合格的Json格式：</p>
+<p><img src="/images/Json格式.png" alt=""><br>不合格的Json格式：<br><img src="/images/不合格Json格式.png" alt=""><br>参照：<a href="http://javascript.ruanyifeng.com/stdlib/json.html" target="_blank" rel="external">http://javascript.ruanyifeng.com/stdlib/json.html</a><br>未完待续…</p>
 
              </div>
 
@@ -183,8 +183,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/05/25/directive/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/05/25/directive/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/06/08/JavaScript数据类型和Json格式/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/06/08/JavaScript数据类型和Json格式/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
