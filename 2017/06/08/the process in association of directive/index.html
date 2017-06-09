@@ -111,7 +111,18 @@
             </div>
             <!-- Post -->
             <div class="post-content" >
-                
+                <h1 id="关联解释和示例"><a href="#关联解释和示例" class="headerlink" title="关联解释和示例"></a>关联解释和示例</h1><p>首先，我们先解释一下关联，就是上一级改变，下一级受到影响，作出相应的改变。<br>我们拿我现在做的项目来举例（先举一个2级关联的示例）:<br>我现有第一级有区域，下一级是器具用户，为此，我们给出指令V层，我们要实现的就是当区域做出改变的时候，器具用户做出相应的改变：</p>
+<p><img src="/images/2级以上关联V层.png" alt=""><br>为此，我们给出相应的代码：</p>
+<p>区域指令C层：<br><img src="/images/区域指令C层.png" alt=""></p>
+<p>区域指令V层：<br><img src="/images/区域指令V层.png" alt=""></p>
+<p>器具用户指令C层：<br><img src="/images/器具用户指令C层1.png" alt=""><br><img src="/images/器具用户指令C层2.png" alt=""></p>
+<p>器具用户指令V层：<br><img src="/images/器具用户指令V层.png" alt=""></p>
+<p>区域和器具用户相关联大体思路我们写一个相应的流程：</p>
+<p>区域流程图：<br><img src="/images/区域指令流程图.png" alt=""></p>
+<p>器具用户流程图：<br><img src="/images/器具用户指令流程图.png" alt=""></p>
+<p>未完待续…<br>接下来，详解…</p>
+<p>如有错误，欢迎批评指正!</p>
+
              </div>
 
             <!-- Post Comments -->
@@ -173,8 +184,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/06/08/Directive指令-2级以上关联-流程/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/06/08/Directive指令-2级以上关联-流程/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2017/06/08/the process in association of directive/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/06/08/the process in association of directive/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
